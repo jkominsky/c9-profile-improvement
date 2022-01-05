@@ -1,0 +1,80 @@
+profiles:
+  accounting-service:
+    containers:
+      - name: accounting-service
+  agreements-service:
+    containers:
+      - name: agreements-service
+  auth-service:
+    containers:
+      - name: auth-service
+  collateral-service:
+    containers:
+      - name: collateral-service
+  contact-service:
+    containers:
+      - name: contact-service
+  files-service:
+    containers:
+      - name: files-service
+  geolocations-service:
+    containers:
+      - name: geolocations-service
+  inspections-service:
+    containers:
+      - name: inspections-service
+#   lwio-api:
+#     containers:
+#       - name: lwio-api
+  lwio-go:
+    containers:
+      - name: lwio-go
+  payments-service:
+    containers:
+      - name: payments-service
+  search-service:
+    containers:
+      - name: search-service
+  title-service:
+    containers:
+      - name: title-service
+  vendor-service:
+    containers:
+      - name: vendor-service
+  admin-ui-product-api:
+    containers:
+      - name: auth-service
+  ls-product-api:
+    containers:
+      - name: contact-service
+      - name: files-service
+      - name: geolocations-service
+      - name: inspections-service
+      - name: title-service
+      - name: vendor-service
+  lma-product-api:
+    containers:
+      - name: inspections-service
+  cla-product-api:
+    containers:
+      - name: accounting-service
+      - name: agreements-service
+      - name: collateral-service
+      - name: files-service
+      - name: geolocations-service
+      - name: inspections-service
+      - name: search-service
+  built-for-construction-product-api:
+    containers:
+      - name: accounting-service
+      - name: agreements-service
+      - name: collateral-service
+      - name: files-service
+      - name: inspections-service
+  built-pay-product-api:
+    containers:
+      - name: auth-service
+      - name: contact-service
+    #   - name: lwio-api
+      - name: lwio-go
+      - name: payments-service
