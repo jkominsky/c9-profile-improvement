@@ -23,9 +23,6 @@ profiles:
   inspections-service:
     containers:
       - name: inspections-service
-#   lwio-api:
-#     containers:
-#       - name: lwio-api
   lwio-go:
     containers:
       - name: lwio-go
@@ -75,6 +72,5 @@ profiles:
     containers:
       - name: auth-service
       - name: contact-service
-    #   - name: lwio-api
       - name: lwio-go
       - name: payments-service
